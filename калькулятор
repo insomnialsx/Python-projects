@@ -1,0 +1,24 @@
+print("Привет! Это калькулятор.")
+num1 = input("Введи первое число: ")
+num2 = input("Введи второе число: ")
+
+num1 = int(num1)
+num2 = int(num2)
+
+action = input("Что делаем? (+, -, *, /): ")
+
+if action == "+":
+    result = num1 + num2
+elif action == "-":
+    result = num1 - num2
+elif action == "*":
+    result = num1 * num2
+elif action == "/":
+    if num2 == 0:
+        result= "Ошибка! На ноль делить нельзя!" 
+    else:
+        result= num1/num2
+else:
+    result = "Ошибка! Неизвестное действие."
+
+print("Результат:", result)

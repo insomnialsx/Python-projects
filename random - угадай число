@@ -1,0 +1,13 @@
+import random
+secret_number=random.randint(1,100)
+print("Я загадал число от 1 до 100, попробуй угадать!")
+
+while True:
+    guess=int(input("Введи число:"))
+    if guess>secret_number:
+        print("Меньше!")
+    elif guess<secret_number:
+        print("Больше!")
+    else:
+         print("Правильно! Ты угадал")
+         break
